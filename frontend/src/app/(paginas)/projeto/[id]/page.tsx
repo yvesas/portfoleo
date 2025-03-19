@@ -1,11 +1,12 @@
-import Readme from "@/components/projetos/Readme"
+import { obterProjeto } from "@/functions/projetos"
+import { obterReadme } from "@/functions/github"
 import Cabecalho from "@/components/shared/Cabecalho"
 import CarrosselImagens from "@/components/shared/CarrosselImagens"
 import Container from "@/components/shared/Container"
-import ConteudoMD from "@/components/shared/ConteudoMD"
+import Readme from "@/components/projetos/Readme"
 import Tecnologias from "@/components/tecnologias/Tecnologias"
-import { obterReadme } from "@/functions/github"
-import { obterProjeto } from "@/functions/projetos"
+
+// export const revalidate = 3600
 
 export default async function PaginaProjeto(props: { params: Promise<{ id: string }> }) {
 	const { id } = await props.params

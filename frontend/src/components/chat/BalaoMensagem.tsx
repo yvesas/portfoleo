@@ -1,5 +1,4 @@
 import Mensagem from "@/model/Mensagem"
-import { Divide } from "lucide-react"
 import ConteudoMD from "../shared/ConteudoMD"
 import Image from "next/image"
 

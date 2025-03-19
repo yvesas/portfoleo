@@ -1,5 +1,5 @@
 "use client"
-import { use, useEffect, useRef, useState } from "react"
+import { ChangeEvent, KeyboardEvent, useEffect, useRef, useState } from "react"
 import { IconMessages, IconReload, IconSend } from "@tabler/icons-react"
 import useChat from "@/hooks/useChat"
 import BalaoMensagem from "./BalaoMensagem"
@@ -58,10 +58,10 @@ export default function JanelaChat() {
 					type="text"
 					value={texto}
 					className="flex-1 bg-transparent h-8 outline-none pl-3"
-					onChange={(e: any) => {
+					onChange={(e: ChangeEvent<HTMLInputElement>) => {
 						setTexto(e.target.value)
 					}}
-					onKeyDown={(e: any) => {
+					onKeyDown={(e: KeyboardEvent<HTMLInputElement>) => {
 						if (e.key === "Enter") enviarMensagem()
 					}}
 				/>
