@@ -1,4 +1,4 @@
-POST https://suporteformacaodev.app.n8n.cloud/webhook/assistente-pessoal
+POST http://localhost:5678/webhook-test/personal-assistant
 Content-Type: application/json
 
 {
