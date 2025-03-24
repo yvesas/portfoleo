@@ -20,5 +20,5 @@ export default async function conversar(
 	})
 
 	const msg = await resposta.json()
-	return msg.resposta
+	return msg.output
 }
